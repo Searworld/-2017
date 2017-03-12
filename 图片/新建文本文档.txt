@@ -1,0 +1,166 @@
+         js 命名规范及必要性：
+可读性（能看得）规范性
+命名法：
+类型前缀/首字母大写
+
+
+程序流程控制：
+switch(变量){
+      case 值1：
+          ......
+       break  
+      case 值2：
+          ......
+       break       
+
+}(意思是变量=值1时，执行1....)
+
+if语句
+
+
+？：三目	（其实是if ..else的简写）
+
+跳出：
+break  终止整个循环
+ continue 终止本次循环，跳到下一次
+
+
+取整：parseInt(将字符串转化成数值/将非整数转化成整数)
+取数：parseFloat(可以取到小数点后的数)
+取模：%（取余数）
+
+Json
+    var obh{a:2 , b:"acn" , d:[1,2,3,4]}
+   alert(a)
+
+也可以放数组
+
+for in
+     一般和json配合使用
+
+  var obj={a:5,b:3,c:40};
+   var attr=" ";
+   for(attr in obj){
+      alert(attr+ "="+obj[attr]);
+}
+
+函数返回值（函数的执行结果）
+        function sum(a,b){
+                return a+b
+         }
+           alert(sum（12,6）)
+
+           
+函数传参
+
+         可变参:arguments
+例子1
+                         function sum(){
+                           var result=0;
+                            var i=0;
+                         for(i=0;i<arguments.length;i++){
+                               result+=arguments[ i ];
+
+                         }
+                         }
+                         sum(10,3,5,6,7)
+            //sum(数值可以任意多任意值，因为这里arguments可取任意值，变多变少也可以)
+
+例子2
+ 
+            function css(){
+
+              }
+            
+
+         
+数组基础
+    数组的使用（定义）
+      var arr=[1,2,3,4,5]
+    数组的属性
+        length
+        (既可以获取，又可以设置 )
+        例子：快速清空数组
+    var arr=[1,3,5,6,7];
+     //alert(arr.length)
+
+      arr.length=2
+      alert(arr)
+  
+数组的使用原则：数组中应该只存在一种类型的变量，如果存多个类型，建议用json
+     
+  数组的方法：
+      （删除/添加元素）
+          push(从尾部添加)
+          unshif(从头部添加)
+          pop(从数组尾部删除)
+          shif(从数组头部删除)
+          ps:从中间添加/删除（下面）
+ var arr=[1,2,4,]
+ arr.push(6)
+alert(arr)
+结果就是1，2，4，6
+
+           （排序sort/转换）
+ 应用（商城按价格，销量什么排序）
+           例子：
+      var arr=[96,4,118,12]；
+    arr.sort(function(num1,num2)){
+         return num1-num2
+     
+}
+    alert(arr)
+结果就是从小到大排列；如果是return num2-num1,则是从大到小排列（原因是sort只能是把数组当成字符串，不会转化成数字）
+
+    转换类
+          contact(连接2数组，如果是字符串或者是数值可以用+，但是数组要用contact)   
+           join(分隔符)
+
+例子1
+         var arr1=[1,2,3];
+         var arr2=[4,5,6]
+          alert(arr1.contact(arr2))
+结果就是1，2，3，4，5，6
+
+ 例子2
+        var arr=[1,2,3,4]
+        alert(arr.join("-"))
+结果是1-2-3-4
+      
+     从中间添加 /删除
+           spice(开始位置，长度，元素...)
+            先删除后插入
+        删除：
+               splice(开始位置，长度)
+         插入:（开始，0，元素...）
+         替换
+               
+例子：
+     var arr=[1,2,3,4,5,6];
+     //中间删除
+        arr.splice(3,3)
+       alert(arr)
+      结果是1，2,3
+    // 中间插入
+    arr.splice(3,0,'a','b','v')
+    alert(arr)
+   结果是1，2，3，a,b,v,4,5,6
+        //替换[先删除后插入]
+     arr.splice(2,3,'a','c','v')
+     alert(arr)
+结果就是1，2，a,c,v,6
+       
+         
+
+
+  DOM
+      创建，插入和删除元素
+         
+           
+           
+          
+              
+
+
+
+

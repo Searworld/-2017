@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style type="text/css">
+	*{
+		margin: 0;padding: 0
+	}
+	body{
+		background-color: #ccc
+	}
+	.wrap{
+		width:auto;height:auto;margin: 20px 20px;
+		
+	}
+	.left{
+		width: 200px;height: 120px;border: 1px solid black;
+		box-sizing: border-box;padding: 20px;float: left;
+	}
+	.logo{
+		width: 80px;height: 80px;border: 1px solid black;box-sizing: border-box;
+	}
+	.content{
+		float: left;
+		width: calc(100% - 360px);
+		height: auto;
+		border:1px  solid black;
+		box-sizing: border-box;
+		margin-left: 20px;
+
+		padding: 20px;line-height: 40px
+
+	}
+	.right{
+		float: right;
+		width: 120px;
+		padding: 20px;
+		
+		border:1px solid black;
+		box-sizing: border-box;
+	}
+	.right ul li{
+		width: 80px;height: 80px;
+		list-style: none;
+		float: left;
+		border:1px solid black;
+		box-sizing: border-box;
+		margin-bottom: 20px
+		
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="wrap">
+		<div class="left">
+			<div class="logo">
+				<img src="">
+			</div>
+		</div>
+		<div class="content">
+			<h3>林语堂：幸福无非四件事</h3>
+			<p>01. 一个人彻悟的程度，恰等于他所受痛苦的深度。—— 林语堂《吾国吾民》</p>
+			<p>02. 人生不过如此，且行且珍惜。自己永远是自己的主角，不要总在别人的戏剧里充当着配角。—— 林语堂《人生不过如此》</p>
+			<p>03. 中国人得意时信儒教，失意时信道教、佛教，而在教义与已相背时，会说，“人定胜天”。信仰危机在于，经常改变信仰。—— 林语堂</p>
+			<p>04. 人生幸福，无非四件事：一是睡在自家床上；二是吃父母做的饭菜；三是听爱人讲情话；四是跟孩子做游戏。—— 林语堂</p>
+
+
+
+		</div>
+		<div class="right">
+			<ul>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+				<li>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
